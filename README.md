@@ -13,6 +13,7 @@
       "loginServer": "http://sso.example.com/sso/login",
       "authServer" : "https://sso.example.com/sso/serviceValidate",
       "emailPostfix": "@163.com",
+      "btnText": "SSO登录"
     }
   }
 ]
@@ -24,6 +25,6 @@
 - emailPostfix 登陆邮箱后缀
 - authServer 服务端在获取token之后，可以通过这个url来获取用户的详细信息
 - btnText 登录按钮名称
-第二步：在config.json 这层目录下运行 yapi plugin --name yapi-plugin-sso 重新下载插件
+第二步：在config.json 这层目录下运行 yapi plugin --name yapi-plugin-sso --build 重新下载插件并重新构建。如果是内部私有仓库，那么直接进去venders文件夹下面安装`npm i yapi-plugin-sso`，并执行`ykit pack -m`
 
 第三步： 重启服务器
